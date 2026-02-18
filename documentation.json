@@ -235,7 +235,19 @@
       {
         "tab": "Applications",
         "icon": "layers",
-        "groups": []
+        "groups": [
+          {
+            "group": "Overview",
+            "icon": "layout-grid",
+            "pages": [
+              {
+                "title": "All Applications",
+                "path": "applications/overview",
+                "icon": "layers"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
