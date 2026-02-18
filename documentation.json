@@ -23,8 +23,8 @@
             "icon": "rocket",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "introduction",
+                "title": "Overview",
+                "path": "overview",
                 "icon": "home"
               }
             ]
@@ -40,8 +40,8 @@
             "icon": "file-text",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "ots/introduction",
+                "title": "Overview",
+                "path": "ots/overview",
                 "icon": "home"
               }
             ]
@@ -88,8 +88,8 @@
             "icon": "file-text",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "asp/introduction",
+                "title": "Overview",
+                "path": "asp/overview",
                 "icon": "home"
               }
             ]
@@ -146,8 +146,8 @@
             "icon": "file-text",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "ipx/introduction",
+                "title": "Overview",
+                "path": "ipx/overview",
                 "icon": "home"
               }
             ]
@@ -209,8 +209,8 @@
             "icon": "file-text",
             "pages": [
               {
-                "title": "Introduction",
-                "path": "general/introduction",
+                "title": "Overview",
+                "path": "general/overview",
                 "icon": "home"
               }
             ]
