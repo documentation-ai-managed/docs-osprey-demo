@@ -57,55 +57,6 @@
             ]
           },
           {
-            "group": "Endpoints",
-            "openapi": "api-reference/openapi.yaml",
-            "pages": []
-          },
-          {
-            "group": "Help Center",
-            "icon": "help-circle",
-            "pages": [
-              {
-                "title": "Help Center",
-                "path": "help-center",
-                "icon": "home"
-              },
-              {
-                "group": "FAQs",
-                "icon": "help-circle",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Getting Started FAQ",
-                    "path": "help-center/faq/getting-started"
-                  }
-                ]
-              },
-              {
-                "group": "Troubleshooting",
-                "icon": "alert-triangle",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Cannot Login",
-                    "path": "help-center/troubleshooting/cannot-login"
-                  }
-                ]
-              },
-              {
-                "group": "Guides",
-                "icon": "book-open",
-                "expandable": false,
-                "pages": [
-                  {
-                    "title": "Create Documentation",
-                    "path": "help-center/guides/create-documentation"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "group": "Changelog",
             "icon": "clock",
             "pages": [
@@ -121,22 +72,235 @@
       {
         "tab": "OTS",
         "icon": "box",
-        "groups": []
-      },
-      {
-        "tab": "IPX",
-        "icon": "box",
-        "groups": []
-      },
-      {
-        "tab": "General",
-        "icon": "cog",
-        "groups": []
+        "groups": [
+          {
+            "group": "Summary",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "ots/introduction",
+                "icon": "home"
+              }
+            ]
+          },
+          {
+            "group": "User Guides",
+            "icon": "book-open",
+            "pages": [
+              {
+                "title": "Equipment Preparation",
+                "path": "ots/user-guide/equipment-preparation",
+                "icon": "wrench"
+              },
+              {
+                "title": "Installation Guide",
+                "path": "ots/user-guide/installation",
+                "icon": "download"
+              },
+              {
+                "title": "Data Interpretation",
+                "path": "ots/user-guide/data-interpretation",
+                "icon": "chart-line"
+              }
+            ]
+          },
+          {
+            "group": "Specs",
+            "icon": "clipboard-list",
+            "pages": []
+          },
+          {
+            "group": "Certificates",
+            "icon": "award",
+            "pages": []
+          }
+        ]
       },
       {
         "tab": "ASP",
         "icon": "box",
-        "groups": []
+        "groups": [
+          {
+            "group": "Summary",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "asp/introduction",
+                "icon": "home"
+              }
+            ]
+          },
+          {
+            "group": "User Guides",
+            "icon": "book-open",
+            "pages": [
+              {
+                "title": "Planning",
+                "path": "asp/user-guide/planning",
+                "icon": "clipboard-list"
+              },
+              {
+                "title": "Inspection on Arrival",
+                "path": "asp/user-guide/inspection",
+                "icon": "search"
+              },
+              {
+                "title": "Installation Guide",
+                "path": "asp/user-guide/installation",
+                "icon": "download"
+              },
+              {
+                "title": "Data Collection & Management",
+                "path": "asp/user-guide/data-collection",
+                "icon": "database"
+              },
+              {
+                "title": "MODBUS Reference",
+                "path": "asp/user-guide/modbus-reference",
+                "icon": "code"
+              }
+            ]
+          },
+          {
+            "group": "Specs",
+            "icon": "clipboard-list",
+            "pages": []
+          },
+          {
+            "group": "Certificates",
+            "icon": "award",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "tab": "IPX",
+        "icon": "box",
+        "groups": [
+          {
+            "group": "Summary",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "ipx/introduction",
+                "icon": "home"
+              }
+            ]
+          },
+          {
+            "group": "User Guides",
+            "icon": "book-open",
+            "pages": [
+              {
+                "title": "Equipment Preparation",
+                "path": "ipx/user-guide/equipment-preparation",
+                "icon": "wrench"
+              },
+              {
+                "title": "Initial Checks & Configuration",
+                "path": "ipx/user-guide/initial-checks",
+                "icon": "check-circle"
+              },
+              {
+                "title": "Installation Planning",
+                "path": "ipx/user-guide/installation-planning",
+                "icon": "clipboard-list"
+              },
+              {
+                "title": "Installation Execution",
+                "path": "ipx/user-guide/installation-execution",
+                "icon": "download"
+              },
+              {
+                "title": "Data Management",
+                "path": "ipx/user-guide/data-management",
+                "icon": "database"
+              },
+              {
+                "title": "MODBUS Reference",
+                "path": "ipx/user-guide/modbus-reference",
+                "icon": "code"
+              }
+            ]
+          },
+          {
+            "group": "Specs",
+            "icon": "clipboard-list",
+            "pages": []
+          },
+          {
+            "group": "Certificates",
+            "icon": "award",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "tab": "General",
+        "icon": "cog",
+        "groups": [
+          {
+            "group": "Summary",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "general/introduction",
+                "icon": "home"
+              }
+            ]
+          },
+          {
+            "group": "User Guides",
+            "icon": "book-open",
+            "pages": []
+          },
+          {
+            "group": "Specs",
+            "icon": "clipboard-list",
+            "pages": []
+          },
+          {
+            "group": "Certificates",
+            "icon": "award",
+            "pages": []
+          }
+        ]
+      },
+      {
+        "tab": "ASP",
+        "icon": "box",
+        "groups": [
+          {
+            "group": "Summary",
+            "icon": "file-text",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "asp/introduction",
+                "icon": "home"
+              }
+            ]
+          },
+          {
+            "group": "User Guides",
+            "icon": "book-open",
+            "pages": []
+          },
+          {
+            "group": "Specs",
+            "icon": "clipboard-list",
+            "pages": []
+          },
+          {
+            "group": "Certificates",
+            "icon": "award",
+            "pages": []
+          }
+        ]
       },
       {
         "tab": "Applications",
