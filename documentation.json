@@ -119,12 +119,12 @@
         ]
       },
       {
-        "tab": "OTS — Osprey Tilt String",
+        "tab": "OTS",
         "icon": "box",
         "groups": []
       },
       {
-        "tab": "IPX — In-Place Extensometer",
+        "tab": "IPX",
         "icon": "box",
         "groups": []
       },
@@ -134,7 +134,7 @@
         "groups": []
       },
       {
-        "tab": "ASP — Automatic Settlement Profiler",
+        "tab": "ASP",
         "icon": "box",
         "groups": []
       },
