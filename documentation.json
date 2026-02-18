@@ -16,7 +16,7 @@
     "tabs": [
       {
         "tab": "Home",
-        "icon": "house",
+        "icon": "home",
         "groups": [
           {
             "group": "Getting Started",
@@ -26,44 +26,6 @@
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              }
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "icon": "layers",
-            "pages": [
-              {
-                "title": "Features",
-                "path": "features",
-                "icon": "file-text"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "compass",
-            "pages": [
-              {
-                "title": "Configuration",
-                "path": "configuration",
-                "icon": "settings"
-              }
-            ]
-          },
-          {
-            "group": "Changelog",
-            "icon": "clock",
-            "pages": [
-              {
-                "title": "Release History",
-                "path": "changelog",
-                "icon": "history"
               }
             ]
           }
@@ -71,7 +33,7 @@
       },
       {
         "tab": "OTS",
-        "icon": "box",
+        "icon": "gauge",
         "groups": [
           {
             "group": "Summary",
@@ -119,7 +81,7 @@
       },
       {
         "tab": "ASP",
-        "icon": "box",
+        "icon": "droplets",
         "groups": [
           {
             "group": "Summary",
@@ -177,7 +139,7 @@
       },
       {
         "tab": "IPX",
-        "icon": "box",
+        "icon": "magnet",
         "groups": [
           {
             "group": "Summary",
@@ -240,7 +202,7 @@
       },
       {
         "tab": "General",
-        "icon": "cog",
+        "icon": "info",
         "groups": [
           {
             "group": "Summary",
@@ -272,7 +234,7 @@
       },
       {
         "tab": "Applications",
-        "icon": "layout-panel-left",
+        "icon": "layers",
         "groups": []
       }
     ]
