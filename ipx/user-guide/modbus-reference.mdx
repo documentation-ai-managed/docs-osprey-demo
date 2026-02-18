@@ -9,7 +9,7 @@ In order to facilitate compatibility with diverse logging systems, two register 
 - **Leading MSW (Most Significant Word)** - Recommended for new applications
 - **Leading LSW (Least Significant Word)** - Scheduled to be deprecated in Q2 2025
 
-<Callout kind="warning" title="Deprecation Notice">
+<Callout kind="alert" title="Deprecation Notice">
   The Leading LSW register map is scheduled to be deprecated in Q2 2025. It is not recommended for new applications.
 </Callout>
 
@@ -19,7 +19,7 @@ In order to facilitate compatibility with diverse logging systems, two register 
 
 The device Modbus address is the alias address set using the `set_alias` command.
 
-<Callout kind="important" title="Broadcast Address">
+<Callout kind="alert" title="Broadcast Address">
   IPX's will not respond to the broadcast address "0" over Modbus.
 </Callout>
 
@@ -53,7 +53,7 @@ To initiate a measurement, write any value to address **0x63** using the Write S
 
 ## Leading LSW Register Map (Legacy)
 
-<Callout kind="warning" title="Deprecated">
+<Callout kind="alert" title="Deprecated">
   This map is scheduled to be deprecated in Q2 2025. It is not recommended for new applications.
 </Callout>
 

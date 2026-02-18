@@ -271,38 +271,6 @@
         ]
       },
       {
-        "tab": "ASP",
-        "icon": "box",
-        "groups": [
-          {
-            "group": "Summary",
-            "icon": "file-text",
-            "pages": [
-              {
-                "title": "Introduction",
-                "path": "asp/introduction",
-                "icon": "home"
-              }
-            ]
-          },
-          {
-            "group": "User Guides",
-            "icon": "book-open",
-            "pages": []
-          },
-          {
-            "group": "Specs",
-            "icon": "clipboard-list",
-            "pages": []
-          },
-          {
-            "group": "Certificates",
-            "icon": "award",
-            "pages": []
-          }
-        ]
-      },
-      {
         "tab": "Applications",
         "icon": "layout-panel-left",
         "groups": []

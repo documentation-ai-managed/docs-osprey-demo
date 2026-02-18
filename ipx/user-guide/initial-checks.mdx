@@ -102,7 +102,7 @@ Link the IPX to your data logger or RS-485 USB adaptor as per the wiring table.
 
 You can send commands using the prefix `op ipx [#]` and the termination character `\n` (LF, 0x0A), where `[#]` is used to address the intended device. If only one device is connected, you can use the broadcast address `"0"`.
 
-<Callout kind="warning" title="Broadcast Address">
+<Callout kind="alert" title="Broadcast Address">
   If you use the broadcast address when more than one sensor is connected, they will try to respond to the command simultaneously and the response will be incoherent.
 </Callout>
 
