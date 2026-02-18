@@ -1,0 +1,178 @@
+---
+title: Configuring Osprey Monitoring Systems
+description: Instructions for setting up sensor spacing, data access points, and integration with management tools for optimal performance.
+---
+
+## Overview
+
+Configure your Osprey Tilt String (OTS) and In-Place Extensometer (IPX) systems to match your project's requirements. Proper configuration ensures accurate distributed tilt measurements, resilient data capture, and streamlined maintenance. Focus on sensor bus setup for positioning, environmental adjustments for deployment conditions, data access for integration, and scheduling for long-term reliability.
+
+<Callout kind="info">
+Review your project specifications before configuration. Ensure sensor spacing aligns with expected deformation rates and budget constraints.
+</Callout>
+
+## Sensor Bus Setup and Positioning
+
+Set up the sensor bus to connect up to `150` micro-tilts along a single cable. Position sensors based on asset type, such as diaphragm walls or retaining structures.
+
+<Steps>
+  <Step title="Determine Spacing" icon="ruler">
+    Calculate intervals based on monitoring needs. Use `1m` spacing for high-precision areas and `5m` for distributed detection.
+  </Step>
+  <Step title="Connect Sensors" icon="link">
+    Wire micro-tilts in series. Terminate the bus with the provided resistor.
+  </Step>
+  <Step title="Test Continuity" icon="zap">
+````bash
+ots-test --bus /dev/ttyUSB0 --sensors 32
+````
+    Verify all sensors respond.
+  </Step>
+  <Step title="Mount Assembly" icon="settings">
+    Secure using clamps or embed in concrete. Maintain tension to avoid slack.
+  </Step>
+</Steps>
+
+## Environmental Variable Adjustments
+
+Adjust settings for your deployment environment. Use the configuration dashboard at `https://dashboard.example.com/config` to apply changes.
+
+<Tabs>
+  <Tab title="Trench/Pipeline" icon="digging">
+    Set vibration threshold to `high` and waterproofing to `IP68`.
+    
+    <CodeGroup tabs="JSON,YAML">
+```json
+{
+  "environment": "trench",
+  "vibration_threshold": "high",
+  "sampling_rate": "10Hz"
+}
+```
+```yaml
+environment: trench
+vibration_threshold: high
+sampling_rate: 10Hz
+```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Concrete Embed" icon="layers">
+    Enable thermal compensation and reduce sampling to `1Hz` for stability.
+    
+    <CodeGroup tabs="JSON,YAML">
+```json
+{
+  "environment": "concrete",
+  "thermal_compensation": true,
+  "sampling_rate": "1Hz"
+}
+```
+```yaml
+environment: concrete
+thermal_compensation: true
+sampling_rate: 1Hz
+```
+    </CodeGroup>
+  </Tab>
+  <Tab title="Surface/Rail" icon="rail">
+    Prioritize rail maintenance resilience with `event_trigger` mode.
+    
+    <CodeGroup tabs="JSON,YAML">
+```json
+{
+  "environment": "surface",
+  "mode": "event_trigger",
+  "vibration_threshold": "ultra_high"
+}
+```
+```yaml
+environment: surface
+mode: event_trigger
+vibration_threshold: ultra_high
+```
+    </CodeGroup>
+  </Tab>
+</Tabs>
+
+## Data Management and Access Configuration
+
+Integrate with your data platform using API endpoints at `https://api.example.com/v1`. Configure access points for single-cable data retrieval.
+
+<ParamField path="bus_id" param-type="string" required="true">
+  Unique bus identifier, e.g., `ots-warehouse-01`.
+</ParamField>
+
+<ParamField query="api_key" param-type="string" required="true">
+  Your authentication key from the dashboard.
+</ParamField>
+
+<ParamField header="Content-Type" param-type="string">
+  Set to `application/json`.
+</ParamField>
+
+<ParamField body="sensor_spacing" param-type="array" required="false">
+  Array of positions, e.g., `[0, 1.5, 3.0, 4.5]`.
+</ParamField>
+
+Example API call:
+
+<Request tabs="cURL,JavaScript">
+```bash curl -X POST "https://api.example.com/v1/sensors/config" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "bus_id": "ots-warehouse-01",
+    "sensor_spacing": [0, 1.5, 3.0]
+  }'
+```
+```javascript
+const response = await fetch('https://api.example.com/v1/sensors/config', {
+  method: 'POST',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    bus_id: 'ots-warehouse-01',
+    sensor_spacing: [0, 1.5, 3.0]
+  })
+});
+```
+</Request>
+
+## Maintenance Scheduling
+
+Schedule regular checks to maintain performance. Use the table below as a guide.
+
+| Interval | Task | Tools Needed |
+|----------|------|--------------|
+| Weekly | Visual inspection | None |
+| Monthly | Continuity test | OTS Test Kit |
+| Quarterly | Calibration | Dashboard at `https://dashboard.example.com` |
+| Annually | Full replacement check | Certified technician |
+
+<Expandable title="Advanced Troubleshooting" default-open="false">
+If data drift occurs, recalibrate using:
+
+````bash
+ots-calibrate --bus /dev/ttyUSB0 --reference 0.0
+````
+
+Check for loose connections or environmental interference.
+</Expandable>
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up your first OTS.
+  </Card>
+  <Card title="API Reference" icon="code" href="/authentication">
+    Authenticate data access.
+  </Card>
+  <Card title="Support" icon="help-circle" href="/help-center">
+    Get help and tools.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+Test configurations in a staging environment before production deployment.
+</Callout>
