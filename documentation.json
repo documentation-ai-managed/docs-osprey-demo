@@ -15,8 +15,8 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
-        "icon": "book",
+        "tab": "Home",
+        "icon": "house",
         "groups": [
           {
             "group": "Getting Started",
@@ -55,74 +55,93 @@
                 "icon": "settings"
               }
             ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
+          },
           {
             "group": "Endpoints",
             "openapi": "api-reference/openapi.yaml",
             "pages": []
-          }
-        ]
-      },
-      {
-        "tab": "Help Center",
-        "icon": "help-circle",
-        "pages": [
-          {
-            "title": "Help Center",
-            "path": "help-center",
-            "icon": "home"
           },
           {
-            "group": "FAQs",
+            "group": "Help Center",
             "icon": "help-circle",
-            "expandable": false,
             "pages": [
               {
-                "title": "Getting Started FAQ",
-                "path": "help-center/faq/getting-started"
+                "title": "Help Center",
+                "path": "help-center",
+                "icon": "home"
+              },
+              {
+                "group": "FAQs",
+                "icon": "help-circle",
+                "expandable": false,
+                "pages": [
+                  {
+                    "title": "Getting Started FAQ",
+                    "path": "help-center/faq/getting-started"
+                  }
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "icon": "alert-triangle",
+                "expandable": false,
+                "pages": [
+                  {
+                    "title": "Cannot Login",
+                    "path": "help-center/troubleshooting/cannot-login"
+                  }
+                ]
+              },
+              {
+                "group": "Guides",
+                "icon": "book-open",
+                "expandable": false,
+                "pages": [
+                  {
+                    "title": "Create Documentation",
+                    "path": "help-center/guides/create-documentation"
+                  }
+                ]
               }
             ]
           },
           {
-            "group": "Troubleshooting",
-            "icon": "alert-triangle",
-            "expandable": false,
+            "group": "Changelog",
+            "icon": "clock",
             "pages": [
               {
-                "title": "Cannot Login",
-                "path": "help-center/troubleshooting/cannot-login"
-              }
-            ]
-          },
-          {
-            "group": "Guides",
-            "icon": "book-open",
-            "expandable": false,
-            "pages": [
-              {
-                "title": "Create Documentation",
-                "path": "help-center/guides/create-documentation"
+                "title": "Release History",
+                "path": "changelog",
+                "icon": "history"
               }
             ]
           }
         ]
       },
       {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history"
-          }
-        ]
+        "tab": "OTS — Osprey Tilt String",
+        "icon": "box",
+        "groups": []
+      },
+      {
+        "tab": "IPX — In-Place Extensometer",
+        "icon": "box",
+        "groups": []
+      },
+      {
+        "tab": "General",
+        "icon": "cog",
+        "groups": []
+      },
+      {
+        "tab": "ASP — Automatic Settlement Profiler",
+        "icon": "box",
+        "groups": []
+      },
+      {
+        "tab": "Applications",
+        "icon": "layout-panel-left",
+        "groups": []
       }
     ]
   }
