@@ -307,13 +307,17 @@
   "navbar": {
     "actions": {
       "primary": {
-        "title": "Website",
+        "title": "Home",
         "link": "https://ospreymeasurement.systems/"
       },
       "links": [
         {
           "title": "Support",
           "link": "https://support.ospreymeasurement.com/"
+        },
+        {
+          "title": "Request Quote",
+          "link": "mailto:info@ospreymeasurement.com"
         }
       ]
     }
