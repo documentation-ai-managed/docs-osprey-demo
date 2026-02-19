@@ -7,7 +7,7 @@
       "text": "undefined"
     },
     "dark": {
-      "brand": "#F29A6D",
+      "brand": "#F26721",
       "heading": "undefined",
       "text": "undefined"
     }
@@ -250,5 +250,6 @@
         ]
       }
     ]
-  }
+  },
+  "logo-light": "https://blob-cdn.documentation.ai/org-96dd4a7c-b231-40f8-887d-2810403df3cf/doc-c3c764ab-5ea3-40fb-9c7d-49abb0da242c/1771486260846-mf3hkl8kno-osprey-logo.png?q=85&fm=auto&auto=compress%2Cformat"
 }
