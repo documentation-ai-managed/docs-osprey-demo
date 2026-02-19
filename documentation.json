@@ -201,8 +201,8 @@
         ]
       },
       {
-        "tab": "General",
-        "icon": "info",
+        "tab": "General Products",
+        "icon": "lucide-settings",
         "groups": [
           {
             "group": "Summary",
@@ -244,6 +244,56 @@
                 "title": "All Applications",
                 "path": "applications/overview",
                 "icon": "layers"
+              },
+              {
+                "title": "Bridges",
+                "path": "applications/bridges",
+                "icon": "hard-hat"
+              },
+              {
+                "title": "Dams",
+                "path": "applications/dams",
+                "icon": "dam"
+              },
+              {
+                "title": "Deep Excavation",
+                "path": "applications/deep-excavation",
+                "icon": "shovel"
+              },
+              {
+                "title": "Earthworks",
+                "path": "applications/earthworks",
+                "icon": "earth"
+              },
+              {
+                "title": "Foundations",
+                "path": "applications/foundations",
+                "icon": "landmark"
+              },
+              {
+                "title": "Industrial",
+                "path": "applications/industrial",
+                "icon": "factory"
+              },
+              {
+                "title": "Mines",
+                "path": "applications/mines",
+                "icon": "pickaxe"
+              },
+              {
+                "title": "Rail",
+                "path": "applications/rail",
+                "icon": "train-track"
+              },
+              {
+                "title": "Slope Stability",
+                "path": "applications/slope-stability",
+                "icon": "mountain"
+              },
+              {
+                "title": "Structures",
+                "path": "applications/structures",
+                "icon": "brick-wall"
               }
             ]
           }
@@ -253,5 +303,19 @@
   },
   "logo-light": "https://blob-cdn.documentation.ai/org-96dd4a7c-b231-40f8-887d-2810403df3cf/doc-c3c764ab-5ea3-40fb-9c7d-49abb0da242c/1771486628980-c9ulx6ga1af-osprey-logo-3.png?q=85&fm=auto&auto=compress%2Cformat",
   "favicon": "https://blob-cdn.documentation.ai/org-96dd4a7c-b231-40f8-887d-2810403df3cf/doc-c3c764ab-5ea3-40fb-9c7d-49abb0da242c/1771486567175-hyo3oz6p3bc-osprey-favicon.png?q=85&fm=auto&auto=compress%2Cformat",
-  "logo-dark": "https://blob-cdn.documentation.ai/org-96dd4a7c-b231-40f8-887d-2810403df3cf/doc-c3c764ab-5ea3-40fb-9c7d-49abb0da242c/1771486713212-xsciqkq6mq8-osprey-logo-dark1.png?q=85&fm=auto&auto=compress%2Cformat"
+  "logo-dark": "https://blob-cdn.documentation.ai/org-96dd4a7c-b231-40f8-887d-2810403df3cf/doc-c3c764ab-5ea3-40fb-9c7d-49abb0da242c/1771486713212-xsciqkq6mq8-osprey-logo-dark1.png?q=85&fm=auto&auto=compress%2Cformat",
+  "navbar": {
+    "actions": {
+      "primary": {
+        "title": "Website",
+        "link": "https://ospreymeasurement.systems/"
+      },
+      "links": [
+        {
+          "title": "Support",
+          "link": "https://support.ospreymeasurement.com/"
+        }
+      ]
+    }
+  }
 }
