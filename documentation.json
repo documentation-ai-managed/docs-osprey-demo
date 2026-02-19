@@ -25,7 +25,10 @@
               {
                 "title": "Overview",
                 "path": "overview",
-                "icon": "home"
+                "icon": "home",
+                "show-sidebar": false,
+                "show-toc": false,
+                "show-parent-label": false
               }
             ]
           }
